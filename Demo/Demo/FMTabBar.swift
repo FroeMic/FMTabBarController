@@ -11,14 +11,14 @@ import UIKit
 
 class FMTabBar: UIView {
     // MARK: class properties
-    var buttons: [FMTabbarButton]! = [FMTabbarButton]() {
+    var addGestureRecognizerToViewProtocolDelegate: addGestureRecognizerToFMButtonProtocol?
+    var buttons: [FMTabbarButton]! {
         didSet {
             self.removeSubViews()
             initViews()
         }
     }
-    private var spacingContainerViews = [UIView]() // needed for even spacing of the buttons
-    private var height = 48
+    private var spacingContainerViews = [UIView]()
     private var upperStrokeView = UIView()
     
     // MARK: computed properties
@@ -108,6 +108,13 @@ class FMTabBar: UIView {
             spacingContainerViews[i].center(subview: buttons[i], constantX: 0, constantY: 0)
             spacingContainerViews[i].relativeWidthConstraint(subview: buttons[i], multiplier: 1.0, relatedBy: NSLayoutRelation.Equal)
             spacingContainerViews[i].relativeWidthConstraint(subview: buttons[i], multiplier: 1.0, relatedBy: NSLayoutRelation.LessThanOrEqual)
+        }
+        if let delegate = addGestureRecognizerToViewProtocolDelegate {
+            for button in buttons {
+                if button.userInteractionEnabled {
+                    delegate.addGestureRecognizerToFMButton(button)
+                }
+            }
         }
         selectButtonByIndex(index: 0)
     }

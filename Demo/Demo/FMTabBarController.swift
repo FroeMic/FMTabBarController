@@ -31,6 +31,7 @@ class FMTabBarController: UIViewController {
     */
     private func initTabBar() {
         tabBar = FMTabBar()
+        tabBar.addGestureRecognizerToViewProtocolDelegate = self
         tabBar.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(tabBar)
         self.view.centerHorizontally(subview: tabBar, constant: 0)
