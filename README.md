@@ -1,6 +1,16 @@
 # FMTabBarController
 A lightweight TabBar ViewController which allows various customisations not possible with the default TabBar.
 
+## Open issues
+
+* add a demo project
+* add a proper usage documentation
+* add optional animations to FMTabBarButton
+
+## Requirements
+
+iOS 9.1 or higher
+
 ##License 
 
 The MIT License (MIT)
