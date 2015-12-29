@@ -16,6 +16,8 @@
 		273C6A881C32DDE5005E48A1 /* FMTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C6A871C32DDE5005E48A1 /* FMTabBar.swift */; };
 		273C6A8A1C32DDF6005E48A1 /* FMTabBarSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C6A891C32DDF6005E48A1 /* FMTabBarSegue.swift */; };
 		273C6A8C1C32DE05005E48A1 /* FMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C6A8B1C32DE05005E48A1 /* FMTabBarController.swift */; };
+		273C6A911C32DF0E005E48A1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C6A901C32DF0E005E48A1 /* UIColorExtension.swift */; };
+		273C6A931C32DF48005E48A1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273C6A921C32DF48005E48A1 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		273C6A871C32DDE5005E48A1 /* FMTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTabBar.swift; sourceTree = "<group>"; };
 		273C6A891C32DDF6005E48A1 /* FMTabBarSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTabBarSegue.swift; sourceTree = "<group>"; };
 		273C6A8B1C32DE05005E48A1 /* FMTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMTabBarController.swift; sourceTree = "<group>"; };
+		273C6A901C32DF0E005E48A1 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		273C6A921C32DF48005E48A1 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 		273C6A8F1C32DE26005E48A1 /* FMExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				273C6A901C32DF0E005E48A1 /* UIColorExtension.swift */,
+				273C6A921C32DF48005E48A1 /* UIViewExtension.swift */,
 			);
 			name = FMExtensions;
 			sourceTree = "<group>";
@@ -164,10 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				273C6A881C32DDE5005E48A1 /* FMTabBar.swift in Sources */,
+				273C6A911C32DF0E005E48A1 /* UIColorExtension.swift in Sources */,
 				273C6A8A1C32DDF6005E48A1 /* FMTabBarSegue.swift in Sources */,
 				273C6A751C32DD6E005E48A1 /* ViewController.swift in Sources */,
 				273C6A861C32DDD4005E48A1 /* FMTabBarButton.swift in Sources */,
 				273C6A8C1C32DE05005E48A1 /* FMTabBarController.swift in Sources */,
+				273C6A931C32DF48005E48A1 /* UIViewExtension.swift in Sources */,
 				273C6A731C32DD6E005E48A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
